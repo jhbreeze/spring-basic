@@ -3,15 +3,14 @@ package hello.core.beanFind;
 import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import hello.core.AppConfig;
-import hello.core.Memeber.MemberService;
-import hello.core.Memeber.MemberServiceImpl;
+import hello.core.member.MemberService;
+import hello.core.member.MemberServiceImpl;
 
 public class ApplicationContextBasicFind {
 

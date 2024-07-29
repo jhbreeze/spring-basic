@@ -13,8 +13,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 
-import hello.core.Memeber.MemberRepository;
-import hello.core.Memeber.MemoryMemberRepository;
+import hello.core.member.MemberRepository;
+import hello.core.member.MemoryMemberRepository;
 
 public class ApplicationContextSameBeanFindTest {
 
