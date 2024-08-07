@@ -10,16 +10,13 @@ import jakarta.annotation.PreDestroy;
 import lombok.Setter;
 
 @Component
-@Scope(value = "request")
+@Scope(value = "request") // http 요청당 하나씩 빈이 생성됨.
 public class MyLogger {
 
 	private String uuid;
 
+	@Setter
 	private String requestUrl;
-
-	public void setRequestUrl(String requestUrl) {
-		this.requestUrl = requestUrl;
-	}
 
 	public void log(String message) {
 		System.out.println("[" + uuid + "] " + "[" + requestUrl + "] " + "[" + message + "]");
